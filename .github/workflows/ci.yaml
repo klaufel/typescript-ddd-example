@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-pr-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit-test:
+    name: Unit test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install `pnpm`
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7.21
+
+      - name: Install `Node.js`
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Validation of types
+        run: pnpm run ts:check
+
+      - name: Run unit tests
+        run: pnpm run test:ci
