@@ -29,7 +29,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm run install:ci --strict-peer-dependencies
+        run: pnpm install
 
       - name: Validation of types
         run: pnpm run ts:check
