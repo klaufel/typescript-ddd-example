@@ -35,4 +35,4 @@ jobs:
         run: pnpm run ts:check
 
       - name: Run unit tests
-        run: pnpm run test:unit:ci
+        run: pnpm run test:ci
