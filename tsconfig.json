@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "lib": ["esnext"],
+    "declaration": false,
+    "removeComments": true,
+    "noLib": false,
+    "sourceMap": true,
+    "pretty": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitUseStrict": false,
+    "noFallthroughCasesInSwitch": true,
+    "incremental": true
+  },
+  "exclude": [
+    "node_modules",
+    ".pnpm-store",
+    ".github",
+    ".husky",
+    "dist",
+    "out"
+  ],
+  "include": ["**/*.ts", "**/*.tsx"]
+}
