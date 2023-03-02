@@ -8,6 +8,7 @@
   },
   "main": "src/index.ts",
   "scripts": {
+    "ts:check": "tsc --incremental --noEmit",
     "test": "jest --maxWorkers=50% --verbose",
     "test:ci": "jest --maxWorkers=50% --ci"
   },
