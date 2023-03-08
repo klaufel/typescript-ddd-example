@@ -1,1 +1,1 @@
-export * from '../src/contexts/recipe/entities/RecipeEntity';
+export * from "../src/contexts/recipe/entities/RecipeEntity";

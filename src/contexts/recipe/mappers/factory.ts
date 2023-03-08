@@ -1,7 +1,7 @@
-import { type DomainMapper } from 'packages/domain/src/domain';
+import { type DomainMapper } from "../../../domain";
 
-import FromRecipeResponseToRecipeDetailEntityMapper from './FromRecipeResponseToRecipeDetailEntityMapper';
-import FromRecipeResponseToRecipeListEntityMapper from './FromRecipeResponseToRecipeListEntityMapper';
+import FromRecipeResponseToRecipeDetailEntityMapper from "./FromRecipeResponseToRecipeDetailEntityMapper";
+import FromRecipeResponseToRecipeListEntityMapper from "./FromRecipeResponseToRecipeListEntityMapper";
 
 export const fromRecipeResponseToRecipeDetailEntityMapper = ({
   config,

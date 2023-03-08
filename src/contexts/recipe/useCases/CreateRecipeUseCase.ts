@@ -1,12 +1,12 @@
-import { type DomainUseCaseInterface } from '../../../domain';
+import { type DomainUseCaseInterface } from "../../../domain";
 import {
   type RecipeDetailEntity,
   type RecipeUpsertEntity,
-} from '../entities/RecipeEntity';
-import { type RecipeRepository } from '../repository/HttpRecipeRepository';
+} from "../entities/RecipeEntity";
+import { type RecipeRepository } from "../repository/HttpRecipeRepository";
 
 type CreateRecipeUseCaseParams = {
-  recipe: Omit<RecipeUpsertEntity, 'id'>;
+  recipe: Omit<RecipeUpsertEntity, "id">;
 };
 
 export default class CreateRecipeUseCase

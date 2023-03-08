@@ -1,5 +1,5 @@
-import { type DomainUseCaseInterface } from '../../../domain';
-import { type RecipeRepository } from '../repository/HttpRecipeRepository';
+import { type DomainUseCaseInterface } from "../../../domain";
+import { type RecipeRepository } from "../repository/HttpRecipeRepository";
 
 type DeleteRecipeUseCaseParams = {
   id: string;

@@ -1,11 +1,11 @@
 export const routes = {
-  HOME: '/',
-  RECIPE_LIST: '/recipes',
-  RECIPE_DETAIL: '/recipe/{id}',
-  RECIPE_ADD: '/recipe/upsert',
-  RECIPE_EDIT: '/recipe/upsert/{id}',
-  USER_RECIPES: '/user/recipes',
-  USER_FAVORITES: '/user/favorites',
+  HOME: "/",
+  RECIPE_LIST: "/recipes",
+  RECIPE_DETAIL: "/recipe/{id}",
+  RECIPE_ADD: "/recipe/upsert",
+  RECIPE_EDIT: "/recipe/upsert/{id}",
+  USER_RECIPES: "/user/recipes",
+  USER_FAVORITES: "/user/favorites",
 };
 
 export const getRoute = (

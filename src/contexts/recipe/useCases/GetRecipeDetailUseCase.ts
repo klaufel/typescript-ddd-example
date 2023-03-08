@@ -1,6 +1,6 @@
-import { type DomainUseCaseInterface } from '../../../domain';
-import { type RecipeDetailEntity } from '../entities/RecipeEntity';
-import { type RecipeRepository } from '../repository/HttpRecipeRepository';
+import { type DomainUseCaseInterface } from "../../../domain";
+import { type RecipeDetailEntity } from "../entities/RecipeEntity";
+import { type RecipeRepository } from "../repository/HttpRecipeRepository";
 
 type GetRecipeDetailUseCaseParams = { id: string };
 
