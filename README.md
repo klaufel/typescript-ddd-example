@@ -2,15 +2,33 @@
 
 A TypeScript DDD example is a skeleton of contain all business logic to be used in the application.
 
+Based on [`@sui-domain` package](https://github.com/SUI-Components/sui/tree/master/packages/sui-domain).
+
 ## 👩‍💻 Use domain
+
+### Execute use cases
 
 ```js
 import domain from "@typescript-ddd-example";
 
-await domain.get("get_carrier_list_use_case").execute(/* params */);
+await domain.get("get_recipe_list_use_case").execute(/* params */);
 ```
 
 All `execute` methods will return promises to be more consistent.
+
+### Subsribers of use cases
+
+```js
+import domain from "@typescript-ddd-example";
+
+const { unsubscribe } = domain
+  .get("get_recipe_list_use_case")
+  .subscribe(({ params, error, result }) => {
+    // Callback
+  });
+```
+
+Use `subscribe` method to subscribe to this use case.
 
 ## 🔬 Test
 
